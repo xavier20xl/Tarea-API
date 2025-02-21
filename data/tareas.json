@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "titulo": "Comprar víveres",
+        "descripcion": "Comprar leche, pan, huevos y frutas en el supermercado.",
+        "completada": false,
+        "fecha_creacion": "2024-02-20T12:00:00Z"
+    },
+    {
+        "id": 2,
+        "titulo": "Estudiar para el examen",
+        "descripcion": "Repasar los capítulos 4 y 5 de matemáticas.",
+        "completada": false,
+        "fecha_creacion": "2024-02-19T15:30:00Z"
+    }
+]

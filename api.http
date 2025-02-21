@@ -1,0 +1,26 @@
+### Obtener todas las tareas
+GET http://localhost:3000/tareas
+
+### Obtener una tarea por ID
+GET http://localhost:3000/tareas/1
+
+### Crear una nueva tarea
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{
+    "titulo": "Nueva tarea",
+    "descripcion": "Descripción de al menos 20 caracteres"
+}
+
+### Actualizar una tarea
+PUT http://localhost:3000/tareas/3
+Content-Type: application/json
+
+{
+    "titulo": "Tarea actualizada",
+    "completada": true
+}
+
+### Eliminar una tarea
+DELETE http://localhost:3000/tareas/1
