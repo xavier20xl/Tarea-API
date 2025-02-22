@@ -1,11 +1,11 @@
 ### Obtener todas las tareas
-GET http://localhost:3000/tareas
+GET http://localhost:3001/tareas
 
 ### Obtener una tarea por ID
-GET http://localhost:3000/tareas/1
+GET http://localhost:3001/tareas/1
 
 ### Crear una nueva tarea
-POST http://localhost:3000/tareas
+POST http://localhost:3001/tareas
 Content-Type: application/json
 
 {
@@ -14,7 +14,7 @@ Content-Type: application/json
 }
 
 ### Actualizar una tarea
-PUT http://localhost:3000/tareas/3
+PUT http://localhost:3001/tareas/3
 Content-Type: application/json
 
 {

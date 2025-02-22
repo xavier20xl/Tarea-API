@@ -1,13 +1,13 @@
 import express from 'express';
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 app.use(express.json());
 
 let tareas = [
-  { id: 1, titulo: 'Tarea 1', descripcion: 'Descripción de la tarea 1', completada: false },
-  { id: 2, titulo: 'Tarea 2', descripcion: 'Descripción de la tarea 2', completada: false }
+  { id: 1, titulo: 'Tarea 1', descripcion: 'Descripción de la tarea 1', completada: false, fechaCreacion: new Date() },
+  { id: 2, titulo: 'Tarea 2', descripcion: 'Descripción de la tarea 2', completada: false, fechaCreacion: new Date() }
 ];
 
 // Obtener todas las tareas
@@ -28,7 +28,8 @@ app.post('/tareas', (req, res) => {
     id: tareas.length + 1,
     titulo: req.body.titulo,
     descripcion: req.body.descripcion,
-    completada: false
+    completada: false,
+    fechaCreacion: new Date()
   };
   tareas.push(nuevaTarea);
   res.status(201).json(nuevaTarea);
